@@ -7,7 +7,9 @@ import { RouterLink } from '@angular/router';
 import { BackButtnComponent } from '../../shared/backButtn/backButtn.component';
 
 @Component({
-  imports: [CommonModule,RouterLink,
+  imports: [
+    CommonModule,
+    RouterLink,
     HeaderComponent,
     MenuFooterComponent, 
     LateralComponent, 

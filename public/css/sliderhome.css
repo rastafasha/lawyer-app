@@ -7,11 +7,11 @@
     .carousel-item {
         border-radius: 20px;
         border: 1px solid var(--grisclaro);
-    }
-    
-    .carousel-item img {
-        border-radius: 20px;
-        height: 70%;
+
+        & img {
+            border-radius: 20px;
+            height: 70%;
+        }
     }
     
     .info-slider {
@@ -36,77 +36,73 @@
         height: 40px !important;
         padding: 5px;
         margin-top: 78px;
+
+        & h1 {
+            display: flex;
+            font-size: 4vw;
+            padding: 0;
+            margin: 0;
+        }
+
+        & h2 {
+            display: flex;
+            font-size: 3vw;
+            padding: 0;
+            margin: 0;
+        }
     }
     
-    .div1-home {
-        grid-area: 1 / 2 / 3 / 3;
-    }
-    
-    .info-slider h1 {
-        display: flex;
-        font-size: 4vw;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .info-slider h2 {
-        display: flex;
-        font-size: 3vw;
-        padding: 0;
-        margin: 0;
-    }
     
     .stars {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding-right: 13px;
+
+        & ul {
+            display: inline-flex;
+
+            & li {
+                list-style: none;
+                color: var(--grisfondo)
+            }
+        }
+
+        & .fa {
+            font-size: 4vw;
+        }
     }
     
-    .stars ul {
-        display: inline-flex;
-    }
-    
-    .stars ul li {
-        list-style: none;
-        color: var(--grisfondo)
-    }
     
     .stars ul li.active {
         color: gold;
     }
     
-    .stars .fa {
-        font-size: 4vw;
-    }
     /*--swiffy slider--*/
     
-    .slider-inicio .areagris {
-        background-color: var(--grisfondo);
-        height: auto;
-        padding-top: 30px;
-        position: relative;
-    }
-    
-    .slider-inicio .areablanca {
-        background-color: #fff;
-        height: calc(5vh);
-    }
-    
-    .slider-inicio .areablanca {
-        background-color: #fff;
-        height: calc(5vh);
-        position: absolute;
-        bottom: -50px;
-        width: 100%;
-    }
-    
-    .slider-inicio .arearoja {
-        background-color: var(--red);
-        height: calc(10vh);
-        position: absolute;
-        bottom: -94px;
-        width: 100%;
+    .slider-inicio {
+        & .areagris {
+            background-color: var(--grisfondo);
+            height: auto;
+            padding-top: 30px;
+            position: relative;
+        }
+
+        & .areablanca {
+            background-color: #fff;
+            height: calc(5vh);
+            position: absolute;
+            bottom: -50px;
+            width: 100%;
+        }
+
+        & .arearoja {
+            background-color: var(--red);
+            height: calc(10vh);
+            position: absolute;
+            bottom: -94px;
+            width: 100%;
+        }
     }
     
     @media(max-width:768px) {

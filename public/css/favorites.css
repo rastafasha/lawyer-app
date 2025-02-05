@@ -22,30 +22,35 @@ img {
 .post-date img {
     width: 100%;
 }
+.favorites{
+    & .post .group {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 10px;
+        height: 60px;
+    }
+    
+    & .div1 p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    & .navTabs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2rem;
+        padding-bottom: 60px;
+    }
 
-.favorites .post .group {
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 10px;
-    height: 60px;
-}
-
-.favorites .div1 p {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-
-.favorites .navTabs {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    gap: 2rem;
-    padding-bottom: 60px;
+    & .itemFav img {
+        width: 80%;
+    }
 }
 
 .post-inner {
@@ -56,39 +61,45 @@ img {
     width: 95%;
     height: 490px;
     padding-bottom: 0px;
+
+    & ul.post {
+        padding-left: 0rem;
+    }
+    
 }
 
-.post-inner ul.post {
-    padding-left: 0rem;
+.post{
+    & .group {
+       & .info {
+        & p {
+            font-size: 3vw;
+            margin: 0;
+            padding: 0;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            width: 90%;
+        }
+        & h2 {
+            font-size: 4vw;
+            margin: 0;
+            padding: 0;
+            padding-left: 5px;
+        }
+        & h3 {
+            font-size: 3vw;
+            margin: 0;
+            padding: 0;
+            padding-left: 5px;
+        }
+       }
+    }
+    
 }
 
-.post .group .info p {
-    font-size: 3vw;
-    margin: 0;
-    padding: 0;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    width: 90%;
-}
 
-.post .group .info h2 {
-    font-size: 4vw;
-    margin: 0;
-    padding: 0;
-    padding-left: 5px;
-}
 
-.post .group .info h3 {
-    font-size: 3vw;
-    margin: 0;
-    padding: 0;
-    padding-left: 5px;
-}
 
-.favorites .itemFav img {
-    width: 80%;
-}
 
 @media(max-width:768px) {
     .post .group .foto {
