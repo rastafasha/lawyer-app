@@ -19,10 +19,10 @@ export const routes: Routes = [
     
     //user
     {path: 'profile', component: ProfileComponent},
-    {path: 'settings', component: SettingsComponent},
-    {path: 'edit', component: EditComponent},
-    {path: 'documents', component: DocumentsComponent},
-    {path: 'documents/files', component: FilesComponent},
+    {path: 'profile/settings', component: SettingsComponent},
+    {path: 'profile/edit', component: EditComponent},
+    {path: 'profile/documents', component: DocumentsComponent},
+    {path: 'profile/documents/files', component: FilesComponent},
 
     //wallet
     {path: 'wallet', component: WalletComponent},
